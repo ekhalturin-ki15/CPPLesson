@@ -1,0 +1,22 @@
+#include <iostream>
+using namespace std;
+
+void rect(int i, int n)
+{
+	if (i == n)
+	{
+		cout << "*";
+		return;
+	}
+	cout << "+";
+	rect(i + 1, n);
+	cout << "-";
+	rect(i + 1, n);
+}
+
+int main()
+{
+	int n;
+	cin >> n;
+	rect(0, n);
+}
