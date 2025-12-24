@@ -23,10 +23,9 @@ int main()
 
 	while (a < b)
 	{
-		--b;
+		cout << (b - a - 1 )%3 << " '";
 		++a;
-		cout << a << " ";
-		continue;
+		
 	}
 
 }
