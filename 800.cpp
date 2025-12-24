@@ -16,25 +16,14 @@ int main()
 	// Asm
 
 	int n;
-	cin >> n;
+	//cin >> n;
 
-	a = 0;
-	b = 10;
+	cin >> a >> b;
 
-l:
-	if (a < b)
-	{
-		cout << a << " ";
-		++a;
-		goto l;
-		//continue;//
-	}
 
-	cout << " ";
-	a = 0;
-	b = 10;
 	while (a < b)
 	{
+		--b;
 		++a;
 		cout << a << " ";
 		continue;
